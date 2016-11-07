@@ -7,16 +7,7 @@
 
 (function (root, factory) {
 	"use strict";
-
-	/*global define*/
-	if (typeof define === 'function' && define.amd) {
-		define(['angular', 'sweetalert'], factory);  // AMD
-	} else if (typeof module === 'object' && module.exports) {
-		module.exports = factory(require('angular'), require('sweetalert')); // Node
-	} else {
-		factory(root.angular, root.swal);					// Browser
-	}
-
+	factory(root.angular, root.swal);
 }(this, function (angular, swal) {
 	"use strict";
 
