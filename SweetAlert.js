@@ -5,10 +5,7 @@
 
 */
 
-(function (root, factory) {
-	"use strict";
-	factory(root.angular, root.swal);
-}(this, function (angular, swal) {
+(function () {
 	"use strict";
 
 	angular.module('oitozero.ngSweetAlert', [])
